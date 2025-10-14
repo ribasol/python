@@ -1,0 +1,11 @@
+---
+- name: Intro to playbooks
+  hosts: all
+
+  tasks:
+  - name: Install Nginx
+    apt: 
+      name: Nginx
+      update_cache: yes
+    become: true
+
